@@ -83,7 +83,7 @@ pyinstaller --onefile --windowed --icon=icon.ico --name "AlphaOsuDownloadTool" m
 │  │       HTML / CSS / JavaScript       │  │
 │  │  filters · table · covers · UI      │  │
 │  └──────────────┬──────────────────────┘  │
-│                 │ pywebview.api            │
+│                 │ pywebview.api           │
 │  ┌──────────────▼──────────────────────┐  │
 │  │        Python Backend               │  │
 │  │ login · get_page · choose_dir       │  │
