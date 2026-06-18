@@ -18,10 +18,9 @@
 
 ## 截图
 
-<!-- TODO: 添加截图 -->
-<!-- ![主界面](screenshots/main.png) -->
-<!-- ![筛选](screenshots/filter.png) -->
-<!-- ![下载中](screenshots/downloading.png) -->
+![主界面](screenshots/main.png)
+![筛选](screenshots/filter.png)
+![下载中](screenshots/downloading.png)
 
 ## 使用方式
 
