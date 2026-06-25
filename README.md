@@ -1,12 +1,12 @@
 <div align="center">
 
-> 🇨🇳 中文 | 🇬🇧 [English](README_EN.md)
+> 🇨🇳 [中文版](README_CN.md) | 🇬🇧 English
 
 <img src="https://alphaosu.keytoix.vip/assets/favicon.0d142200.ico" width="72" style="border-radius:16px">
 
 # AlphaOsu! Download Tool
 
-**基于机器学习推荐的 osu! 谱面批量下载桌面工具**
+**ML-powered osu! beatmap batch download desktop tool**
 
 <img src="https://img.shields.io/badge/osu!-PP%20Farming-pink?style=for-the-badge&logo=osu" alt="osu!">
 <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
@@ -15,52 +15,52 @@
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/main.png" width="80%" alt="主界面">
+<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/main.png" width="80%" alt="Main Interface">
 
 <br>
 
-> 输入 osu! 用户名 → ML 推荐谱面 → 筛选 → 批量下载 .osz → 双击导入游戏
+> Enter osu! username → ML recommendations → Filter → Batch download .osz → Double-click to import
 
 <br>
 </div>
 
 ---
 
-## ✨ 功能一览
+## ✨ Features
 
-| 功能 | 说明 |
+| Feature | Description |
 |:---|:---|
-| 🎯 **ML 推荐** | 基于 AlphaOsu 机器学习，推荐你最有可能拿 PP 的谱面 |
-| ⭐ **多维筛选** | 星数范围、Mod 类型、上榜概率、破纪录概率 |
-| 🖼️ **封面预览** | 每首歌显示 beatmap 封面，一眼认出 |
-| ☑️ **多选下载** | 勾选想要的谱面，批量下载 |
-| 📁 **自定义目录** | 选择保存位置，直接下到 osu! Songs 文件夹 |
-| ⬇️ **Sayobot 镜像** | 国内高速下载源，免登录 |
-| 🚫 **隐藏已玩** | 自动过滤已打过的谱面 |
+| 🎯 **ML Recommendations** | Powered by AlphaOsu machine learning — recommends maps you're most likely to gain PP on |
+| ⭐ **Multi-dimensional Filters** | Star rating range, Mod type, leaderboard probability, record-breaking probability |
+| 🖼️ **Cover Preview** | Beatmap cover art displayed for each song |
+| ☑️ **Multi-select Download** | Check the maps you want, batch download |
+| 📁 **Custom Directory** | Choose save location, download directly to osu! Songs folder |
+| ⬇️ **Sayobot Mirror** | High-speed download source for China region, no login required |
+| 🚫 **Hide Played** | Auto-filter maps you've already played |
 
-## 📸 截图
+## 📸 Screenshots
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/main.png" width="80%" alt="主界面">
+<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/main.png" width="80%" alt="Main Interface">
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/filter.png" width="80%" alt="筛选条件">
+<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/filter.png" width="80%" alt="Filter Settings">
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/downloading.png" width="80%" alt="下载中">
+<img src="https://raw.githubusercontent.com/zureealLV/AlphaOsu-Download-Tool/master/screenshots/downloading.png" width="80%" alt="Downloading">
 
 </div>
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 下载 EXE（推荐）
+### Download EXE (Recommended)
 
-前往 [**Releases**](../../releases) 页面下载 `AlphaOsuDownloadTool.exe`，双击即用。
+Go to the [**Releases**](../../releases) page and download `AlphaOsuDownloadTool.exe`, double-click to run.
 
-### 从源码运行
+### Run from Source
 
 ```bash
 git clone https://github.com/zureealLV/AlphaOsu-Download-Tool.git
@@ -69,14 +69,14 @@ pip install pywebview
 python main.py
 ```
 
-### 打包为 EXE
+### Build as EXE
 
 ```bash
 pip install pyinstaller
 pyinstaller --onefile --windowed --icon=icon.ico --name "AlphaOsuDownloadTool" main.py
 ```
 
-## 🏗️ 技术架构
+## 🏗️ Architecture
 
 ```
 ┌───────────────────────────────────────────┐
@@ -94,26 +94,26 @@ pyinstaller --onefile --windowed --icon=icon.ico --name "AlphaOsuDownloadTool" m
 └─────────────────┼─────────────────────────┘
                   │ HTTPS
        ┌──────────▼──────────┐
-       │   AlphaOsu API      │  ← ML 推荐数据
+       │   AlphaOsu API      │  ← ML recommendation data
        └─────────────────────┘
        ┌─────────────────────┐
-       │  Sayobot Mirror     │  ← .osz 下载
+       │  Sayobot Mirror     │  ← .osz download
        └─────────────────────┘
 ```
 
-## 🎮 使用方法
+## 🎮 How to Use
 
-1. **输入用户名** — 填入你的 osu! 用户名，点击「获取推荐」
-2. **调整筛选** — 拖动滑块选择星数范围、概率阈值，勾选 Mod
-3. **选择谱面** — 逐个勾选或全选
-4. **开始下载** — 点击「下载选中」或「全部下载」
-5. **导入游戏** — 双击 .osz 文件自动导入 osu!
+1. **Enter Username** — Type your osu! username, click "Get Recommendations"
+2. **Adjust Filters** — Drag sliders for star range, probability thresholds, check Mods
+3. **Select Maps** — Check individual maps or select all
+4. **Start Download** — Click "Download Selected" or "Download All"
+5. **Import to Game** — Double-click .osz files to auto-import into osu!
 
-## 🙏 致谢
+## 🙏 Credits
 
-- [**AlphaOsu**](https://alphaosu.keytoix.vip/) — 机器学习 PP 推荐引擎
-- [**Sayobot**](https://sayobot.cn/) — 国内 osu! 谱面镜像
-- [**PyWebView**](https://pywebview.flowrl.com/) — 跨平台桌面 GUI 框架
+- [**AlphaOsu**](https://alphaosu.keytoix.vip/) — Machine learning PP recommendation engine
+- [**Sayobot**](https://sayobot.cn/) — osu! beatmap mirror for China region
+- [**PyWebView**](https://pywebview.flowrl.com/) — Cross-platform desktop GUI framework
 
 ---
 
