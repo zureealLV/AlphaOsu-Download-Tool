@@ -1,5 +1,7 @@
 <div align="center">
 
+> 🇨🇳 中文 | 🇬🇧 [English](README_EN.md)
+
 <img src="https://alphaosu.keytoix.vip/assets/favicon.0d142200.ico" width="72" style="border-radius:16px">
 
 # AlphaOsu! Download Tool
